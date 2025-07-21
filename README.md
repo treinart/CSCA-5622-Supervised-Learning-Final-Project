@@ -1,69 +1,108 @@
 # CSCA-5622-Supervised-Learning-Final-Project
-CSCA 5622 Supervised Learning Final Project - Customer Performance Analysis via Regression
-Overview
+
+## Customer Performance Analysis via Regression
+
 This project analyzes and models dealership customer performance using supervised machine learning. The goal is to predict each customer’s average total sales per invoice (labor and parts combined) and understand what factors drive customer value. The analysis uses a fully anonymized, synthetic dataset generated to match real-world business logic and industry KPIs.
 
-Contents
-Customer Performance Analysis via Regression .ipynb – Main Jupyter notebook (analysis, modeling, visualizations, commentary)
+---
 
-Customer Performance Analysis via Regression .pdf – Final written report
+## Data Privacy and Ethics
 
-generate_invoice_data.py – Python script to generate the anonymized dealership invoice dataset
+**No real customer data is used in this project.**  
+The CSV file was programmatically generated using random but realistic values. All company names, customer numbers, and sales figures are fictitious.
 
-anonymized_invoice_data.csv – The actual dataset used for all modeling and analysis
+---
 
-Generate Anonymized Data Story.docx – Documentation explaining the design and logic behind the synthetic data generator
+## Reproducibility
 
-Data Privacy and Ethics
-No real customer data is used in this project. The CSV file was programmatically generated using random but realistic values. All company names, customer numbers, and sales figures are fictitious.
-
-Reproducibility
 To reproduce this analysis:
 
-Clone the repository
+1. **Clone the repository:**
 
 git clone https://github.com/treinart/CSCA-5622-Supervised-Learning-Final-Project.git
 
-Install required packages (see below)
 
-Run the data generator (optional):
-If you wish to create a new anonymized CSV, edit and run generate_invoice_data.py
+2. **Install required packages** (see dependencies below).
 
-Open the Jupyter notebook and run all cells, or review the PDF/report for results.
+3. **(Optional) Generate a new dataset:**  
+If you wish to create a new anonymized CSV, edit and run `generate_invoice_data.py`.
 
-Required Python Packages
-pandas
+4. **Run the notebook:**  
+Open `final_project.ipynb` in Jupyter Notebook or JupyterLab.  
+Make sure `anonymized_invoice_data.csv` is saved in the same folder as the notebook.
 
-numpy
+5. **Or review the PDFs/reports** for a full walk-through and results.
 
-matplotlib
+---
 
-seaborn
+## Project Dependencies and Environment
 
-scikit-learn
+This notebook requires the following Python packages:
 
-scipy
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- scipy
+- xgboost
 
-xgboost
-
-faker
-
-Install all with:
+Install missing packages using pip (in a notebook cell or terminal):
 
 pip install pandas numpy matplotlib seaborn scikit-learn scipy xgboost faker
 
+
+If you see import errors, check your Jupyter kernel matches your Python environment:
+
+import sys
+print(sys.executable)
+
+If XGBoost does not install with pip, try:
+
+<full_path_from_above> -m pip install xgboost
+
+Restart your Jupyter kernel after installing.
+
 Usage
-Review or run the notebook for full exploratory data analysis (EDA), modeling, and business interpretation.
+Run the notebook (final_project.ipynb) for full exploratory data analysis (EDA), modeling, and business interpretation.
 
-The script generate_invoice_data.py can be run independently to create fresh, randomized invoice data that matches dealership KPIs and business rules.
+Use generate_invoice_data.py to create fresh, randomized invoice data.
 
-All plots and code in the notebook are fully reproducible using the attached dataset and script.
+All code and plots are fully reproducible using the attached dataset and script.
+
+Overview of Files
+anonymized_invoice_data.csv
+Synthetic invoice dataset used for all analysis.
+Save this file in the same directory as the Jupyter notebook.
+
+final_project.ipynb
+Main Jupyter notebook containing all code, analysis, and visualizations.
+
+Customer Performance Analysis via Regression.pdf
+Final formatted report suitable for submission or review.
+
+jupyter_notebook_final_project.pdf
+PDF export of the notebook, including code, outputs, and plots.
+
+The Story_ Why I Built My Own Data Generator.pdf
+A short narrative on the motivation and process behind the custom data generator.
+
+generate_invoice_data.py
+Python script for generating anonymized, realistic dealership invoice data.
+Edit the output path in the script if you wish to generate your own CSV.
+
+final_project.html
+HTML export of the notebook, viewable in any web browser.
 
 License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
+See LICENSE for full details.
 
 Author
 Travis Reinart
 travisreinart@gmail.com
 University of Colorado Boulder
 CSCA 5622: Supervised Learning – Final Project
+
+GitHub Repository
+https://github.com/treinart/CSCA-5622-Supervised-Learning-Final-Project
