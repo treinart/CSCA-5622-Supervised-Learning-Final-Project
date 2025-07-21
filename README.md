@@ -63,6 +63,8 @@ If XGBoost does not install with pip, try:
 
 Restart your Jupyter kernel after installing.
 
+---
+
 ## Usage
 Run the notebook (final_project.ipynb) for full exploratory data analysis (EDA), modeling, and business interpretation.
 
@@ -70,33 +72,39 @@ Use generate_invoice_data.py to create fresh, randomized invoice data.
 
 All code and plots are fully reproducible using the attached dataset and script.
 
+---
+
 ## Overview of Files
 anonymized_invoice_data.csv
 Synthetic invoice dataset used for all analysis.
 Save this file in the same directory as the Jupyter notebook.
-
+---
 final_project.ipynb
 Main Jupyter notebook containing all code, analysis, and visualizations.
-
+---
 Customer Performance Analysis via Regression.pdf
 Final formatted report suitable for submission or review.
-
+---
 jupyter_notebook_final_project.pdf
 PDF export of the notebook, including code, outputs, and plots.
-
+---
 The Story_ Why I Built My Own Data Generator.pdf
 A short narrative on the motivation and process behind the custom data generator.
-
+---
 generate_invoice_data.py
 Python script for generating anonymized, realistic dealership invoice data.
 Edit the output path in the script if you wish to generate your own CSV.
-
+---
 final_project.html
 HTML export of the notebook, viewable in any web browser.
+
+---
 
 ## License
 This project is licensed under the MIT License.
 See LICENSE for full details.
+
+---
 
 ## Author
 Travis Reinart
@@ -104,5 +112,9 @@ travisreinart@gmail.com
 University of Colorado Boulder
 CSCA 5622: Supervised Learning – Final Project
 
+---
+
 ## GitHub Repository
 https://github.com/treinart/CSCA-5622-Supervised-Learning-Final-Project
+
+---
