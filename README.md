@@ -23,6 +23,7 @@ To reproduce this analysis:
 Clone the repository
 
 git clone https://github.com/treinart/CSCA-5622-Supervised-Learning-Final-Project.git
+
 Install required packages (see below)
 
 Run the data generator (optional):
@@ -49,10 +50,8 @@ faker
 
 Install all with:
 
-nginx
-Copy
-Edit
 pip install pandas numpy matplotlib seaborn scikit-learn scipy xgboost faker
+
 Usage
 Review or run the notebook for full exploratory data analysis (EDA), modeling, and business interpretation.
 
@@ -61,7 +60,7 @@ The script generate_invoice_data.py can be run independently to create fresh, ra
 All plots and code in the notebook are fully reproducible using the attached dataset and script.
 
 License
-Specify your license here (MIT is common for academic projects, or state “For educational purposes only.”)
+This project is licensed under the [MIT License](LICENSE).
 
 Author
 Travis Reinart
