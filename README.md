@@ -97,7 +97,6 @@ Edit the output path in the script if you wish to generate your own CSV.
 ---
 final_project.html
 HTML export of the notebook, viewable in any web browser.
-
 ---
 
 ## License
